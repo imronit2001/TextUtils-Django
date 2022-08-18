@@ -1,7 +1,19 @@
 from django.http import HttpResponse
-
 def index(request):
-    return HttpResponse('''<h1>Hello Ronit</h1> <p> Go to Google : <a href="https://www.google.com/">Google</a></p>''')
+    return HttpResponse("Home")
 
-def about(request):
-    return HttpResponse("About Ronit")
+def removepunc(request):
+    return HttpResponse("remove punc")
+
+def capfirst(request):
+    return HttpResponse("capitalize first")
+
+def newlineremove(request):
+    return HttpResponse("capitalize first")
+
+
+def spaceremove(request):
+    return HttpResponse("space remover")
+
+def charcount(request):
+    return HttpResponse("charcount ")
